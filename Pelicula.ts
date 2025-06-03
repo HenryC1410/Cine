@@ -16,11 +16,4 @@ export class Pelicula {
         this.duracion = duracion;
         this.sala = sala;
     }
-
-    AsignarSala(sala: Sala): void {
-        this.sala = sala;
-    }
-    obtenersala(): Sala {
-        return this.sala;
-    }
 }

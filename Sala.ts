@@ -4,15 +4,13 @@ import { Accesorio } from './Accesorio';
 
 export class Sala{
     public nombre:string;
-    public numero:number;
     public asientos: Asiento[];
     public aperitivos: Aperitivos[];
     public accesorios: Accesorio[];
     
     
-    constructor(nombre: string, numero: number) {
+    constructor(nombre: string) {
         this.nombre = nombre;
-        this.numero = numero;
         this.asientos = [];
         this.aperitivos = [];
         this.accesorios = [];

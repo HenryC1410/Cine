@@ -8,5 +8,4 @@ export class Comestible {
         this.precio = precio;
     }
 
-
 }

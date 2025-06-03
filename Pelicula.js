@@ -10,12 +10,6 @@ var Pelicula = /** @class */ (function () {
         this.duracion = duracion;
         this.sala = sala;
     }
-    Pelicula.prototype.AsignarSala = function (sala) {
-        this.sala = sala;
-    };
-    Pelicula.prototype.obtenersala = function () {
-        return this.sala;
-    };
     return Pelicula;
 }());
 exports.Pelicula = Pelicula;

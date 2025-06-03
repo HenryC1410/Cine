@@ -2,9 +2,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Sala = void 0;
 var Sala = /** @class */ (function () {
-    function Sala(nombre, numero) {
+    function Sala(nombre) {
         this.nombre = nombre;
-        this.numero = numero;
         this.asientos = [];
         this.aperitivos = [];
         this.accesorios = [];

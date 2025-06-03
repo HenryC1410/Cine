@@ -7,12 +7,6 @@ var Asiento = /** @class */ (function () {
         this.Fila = fila;
         this.capacidad = false;
     }
-    Asiento.prototype.marcarOcupado = function () {
-        this.capacidad = true;
-    };
-    Asiento.prototype.marcarLibre = function () {
-        this.capacidad = false;
-    };
     return Asiento;
 }());
 exports.Asiento = Asiento;
