@@ -13,42 +13,42 @@ var Compra = /** @class */ (function () {
         console.log("Cliente: ".concat(this.cliente.nombre));
         console.log("Pel\u00EDcula: ".concat(this.pelicula.titulo));
         console.log("Sala: ".concat(this.sala.nombre));
-        var asientosStr = '';
+        var asiento = '';
         for (var i = 0; i < this.cliente.asiento.length; i++) {
-            asientosStr += this.cliente.asiento[i].Fila + this.cliente.asiento[i].numero;
+            asiento += this.cliente.asiento[i].Fila + this.cliente.asiento[i].numero;
             if (i < this.cliente.asiento.length - 1) {
-                asientosStr += ', ';
+                asiento += ', ';
             }
         }
-        if (asientosStr === '') {
-            asientosStr = 'No asignado';
+        if (asiento === '') {
+            asiento = 'No asignado';
         }
-        console.log("Asiento(s): ".concat(asientosStr));
+        console.log("Asiento(s): ".concat(asiento));
         console.log("Fecha: ".concat(this.fecha));
-        var aperitivosStr = '';
+        var aperitivo = '';
         var aperitivos = this.sala.obtenerAperitivos();
         for (var i = 0; i < aperitivos.length; i++) {
-            aperitivosStr += aperitivos[i].nombre;
+            aperitivo += aperitivos[i].nombre;
             if (i < aperitivos.length - 1) {
-                aperitivosStr += ', ';
+                aperitivo += ', ';
             }
         }
-        if (aperitivosStr === '') {
-            aperitivosStr = 'Ninguno';
+        if (aperitivo == '') {
+            aperitivo = 'Ninguno';
         }
-        console.log("Aperitivos gratuitos: ".concat(aperitivosStr));
-        var accesoriosStr = '';
+        console.log("Aperitivos gratuitos: ".concat(aperitivo));
+        var accesorio = '';
         var accesorios = this.sala.obtenerAccesorios();
         for (var i = 0; i < accesorios.length; i++) {
-            accesoriosStr += accesorios[i].nombre;
+            accesorio += accesorios[i].nombre;
             if (i < accesorios.length - 1) {
-                accesoriosStr += ', ';
+                accesorio += ', ';
             }
         }
-        if (accesoriosStr === '') {
-            accesoriosStr = 'Ninguno';
+        if (accesorio === '') {
+            accesorio = 'Ninguno';
         }
-        console.log("Accesorios gratuitos: ".concat(accesoriosStr));
+        console.log("Accesorios gratuitos: ".concat(accesorio));
         var consumidosStr = '';
         for (var i = 0; i < this.cliente.comestibles.length; i++) {
             consumidosStr += this.cliente.comestibles[i].nombre;

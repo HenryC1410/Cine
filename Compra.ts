@@ -22,47 +22,47 @@ export class Compra {
         console.log(`Sala: ${this.sala.nombre}`);
 
         
-        let asientosStr = '';
+        let asiento = '';
         for (let i = 0; i < this.cliente.asiento.length; i++) {
-            asientosStr += this.cliente.asiento[i].Fila + this.cliente.asiento[i].numero;
+            asiento += this.cliente.asiento[i].Fila + this.cliente.asiento[i].numero;
             if (i < this.cliente.asiento.length - 1) {
-                asientosStr += ', ';
+                asiento += ', ';
             }
         }
-        if (asientosStr === '') {
-            asientosStr = 'No asignado';
+        if (asiento === '') {
+            asiento = 'No asignado';
         }
-        console.log(`Asiento(s): ${asientosStr}`);
+        console.log(`Asiento(s): ${asiento}`);
 
         console.log(`Fecha: ${this.fecha}`);
 
         
-        let aperitivosStr = '';
+        let aperitivo = '';
         const aperitivos = this.sala.obtenerAperitivos();
         for (let i = 0; i < aperitivos.length; i++) {
-            aperitivosStr += aperitivos[i].nombre;
+            aperitivo += aperitivos[i].nombre;
             if (i < aperitivos.length - 1) {
-                aperitivosStr += ', ';
+                aperitivo += ', ';
             }
         }
-        if (aperitivosStr === '') {
-            aperitivosStr = 'Ninguno';
+        if (aperitivo == '') {
+            aperitivo = 'Ninguno';
         }
-        console.log(`Aperitivos gratuitos: ${aperitivosStr}`);
+        console.log(`Aperitivos gratuitos: ${aperitivo}`);
 
        
-        let accesoriosStr = '';
+        let accesorio = '';
         const accesorios = this.sala.obtenerAccesorios();
         for (let i = 0; i < accesorios.length; i++) {
-            accesoriosStr += accesorios[i].nombre;
+            accesorio += accesorios[i].nombre;
             if (i < accesorios.length - 1) {
-                accesoriosStr += ', ';
+                accesorio += ', ';
             }
         }
-        if (accesoriosStr === '') {
-            accesoriosStr = 'Ninguno';
+        if (accesorio === '') {
+            accesorio = 'Ninguno';
         }
-        console.log(`Accesorios gratuitos: ${accesoriosStr}`);
+        console.log(`Accesorios gratuitos: ${accesorio}`);
 
         
         let consumidosStr = '';
